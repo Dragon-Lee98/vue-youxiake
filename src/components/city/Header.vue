@@ -30,5 +30,6 @@ header i{
   position: absolute;
   right: .5rem;
   font-weight: 700;
+  font-size: .426667rem;
 }
 </style>
