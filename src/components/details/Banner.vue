@@ -86,15 +86,15 @@ export default {
   font-weight: 600;
 }
 .txt-desc{
-    font-size: 15px;
+    font-size: .4rem;
     line-height: 1.3;
     color: #333;
 }
 .fs14{
-    font-size: 14px;
+    font-size: .37333rem;
 }
 .fs20 {
-  font-size: 20px;
+  font-size: .53333rem;
   font-weight: 600;
 }
 .banner-price {
@@ -108,7 +108,7 @@ export default {
     margin-right: 1rem;
 }
 .price span{
-    font-size: 14px;
+    font-size: .373333rem;
     margin-left: .1rem;
     padding: 0 .08rem;
     border: 1px solid orange;
@@ -116,10 +116,11 @@ export default {
 }
 .banner-location i{
     color: orange;
+    font-size: .35rem;
 }
 .banner-location span{
     margin-left: .1rem;
-    font-size: 12px;
+    font-size: .32rem;
     color: #333;
 }
 </style>

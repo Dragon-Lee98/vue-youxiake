@@ -79,6 +79,9 @@ export default {
   color: #000;
   font-size: .426666rem;
 }
+.banner-header-left i{
+  font-size: .42666rem;
+}
 .banner-header-search {
   flex: 1;
   padding: .2rem .2rem;
@@ -87,7 +90,9 @@ export default {
   background: #fff;
   border-radius: .1rem;
 }
-
+.banner-header-search i{
+  font-size: .42666rem;
+}
 .banner-swiper{
   width: 100%;
   height: 5.653rem;

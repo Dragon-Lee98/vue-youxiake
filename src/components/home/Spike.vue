@@ -85,6 +85,7 @@ export default {
   float: left;
   width: 1.9rem;
   height: 0.42rem;
+  margin-top: .103333rem;
 }
 .spike-content-preferential .over{
   position: absolute;
@@ -94,6 +95,7 @@ export default {
   font-size: 0.37333rem;
   line-height: 0.42rem;
   margin-left: 2.3rem;
+  margin-top: .103333rem;
 }
 
 /* 倒计时组件的样式调整 S */
@@ -106,10 +108,15 @@ export default {
   margin-left: 4rem;
 }
 .spike-content-preferential >>> .count-wrap > .count{
-  line-height: 42px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.spike-content-preferential >>> .count-wrap > .count > span:nth-child(1){
+  padding: 0.05rem;
 }
 .spike-content-preferential >>> .count-wrap > .count > span:not(:nth-child(1)) {
-  padding: 0.08rem;
+  padding: 0.05rem;
   margin: 0 0.13333rem;
   border-radius: 0.13333rem;
   background: #ccc;

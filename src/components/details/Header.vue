@@ -41,5 +41,7 @@ header {
   padding-left: 0.5rem;
   font-weight: 700;
 }
-
+.header-left i{
+  font-size: .42666rem;
+}
 </style>
