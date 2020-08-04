@@ -101,28 +101,35 @@ export default {
 /* 倒计时组件的样式调整 S */
 .spike-content-preferential >>> div{
   display: inline-block;
-  /* line-height: 1.3333rem; */
-  margin-top: .6rem;
-  margin-left: 4rem;
+  line-height: 1.3333rem;;
 }
 .spike-content-preferential >>> div > p {
   font-size: 0.37333rem;
   margin: 0 0.26666rem;
 }
-.spike-content-preferential >>> div > p > span:nth-child(1){
+.spike-content-preferential >>> .count-wrap{
+  float: left;
+  margin-left: 4rem;
+}
+.spike-content-preferential >>> .count-wrap > .count{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.spike-content-preferential >>> .count-wrap > .count > span:nth-child(1){
   padding: 0.05rem;
 }
-.spike-content-preferential >>> div > p > span:not(:nth-child(1)) {
+.spike-content-preferential >>> .count-wrap > .count > span:not(:nth-child(1)) {
   padding: 0.05rem;
   margin: 0 0.13333rem;
   border-radius: 0.13333rem;
   background: #ccc;
 }
-.spike-content-preferential >>> div > p > i,
-.spike-content-preferential >>> div > p > span {
+.spike-content-preferential >>> .count-wrap > .count > i,
+.spike-content-preferential >>> .count-wrap > .count > span {
   font-size: 0.37333rem; 
 }
-.spike-content-preferential >>> div > p > span > span {
+.spike-content-preferential >>> .count-wrap > .count > span > span {
   margin-left: 0.2rem;
 }
 /* 倒计时组件的样式调整 E */

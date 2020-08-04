@@ -101,8 +101,7 @@ export default {
 /* 倒计时组件的样式调整 S */
 .spike-content-preferential >>> div{
   display: inline-block;
-  /* line-height: 1.3333rem; */
-  margin-top: .6rem;
+  line-height: 1.3333rem;
   margin-left: 4rem;
 }
 .spike-content-preferential >>> div > p {

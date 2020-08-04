@@ -49,17 +49,44 @@ export default {
   },
   methods: {
     http() {
-      this.axios.get("http://www.lzlstudy.top:9999/home")
-      .then((res)=>{
-          let data = res.data.data;
-          data.forEach((item)=>{
-              if(item.city === this.cityName){
-                  this.spikeList = item.spikeList;
-                  this.likeList = item.likeList;
-              }
-          })
+      // this.axios.get("http://www.lzlstudy.top:9999/home")
+      // .then((res)=>{
+      //     let data = res.data.data;
+      //     data.forEach((item)=>{
+      //         if(item.city === this.cityName){
+      //             this.spikeList = item.spikeList;
+      //             this.likeList = item.likeList;
+      //         }
+      //     })
 
-      })
+      // })
+      const service = axios.create({
+        timeout: 10000,
+        headers: {
+          post: {
+            "Content-Type": "application/json;charset=UTF-8"
+          }
+        },
+        emulateJSON: true,
+        withCredentials: true
+      });
+      const res = await service.get('http://www.lzlstudy.top:9999/home');
+        // 绝对是成功
+        if (res.success) {
+            console.log(res)
+        } else {
+            alert(res.message);
+        }
+    //   this.axios
+    //     .get("http://39.101.217.150:8086/article/articlebychannel")
+    //     .then(
+    //       data => {
+    //         console.log(data);
+    //       },
+    //       err => {
+    //         console.log(err);
+    //       }
+        
     }
   },
   activated() {
